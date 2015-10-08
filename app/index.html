@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Income Tax Form</title>
+	<meta name="description" content="A desktop Application With Node.js">
+	<meta name="author" content="iSolution">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+	<div id="details">
+	<div id="address_details">
+
+		<header>
+			<div class="jumbotron">
+				<div class="container">
+					<h1><a href="index.html">Welcome to income tax form</a></h1>
+				</div> <!-- end container -->
+			</div> <!-- end jumbotron -->
+		</header>
+
+		<div class="container">
+			<div class="col-md-6">
+				<form action="" role="search">
+					<div class="col-md-10">
+						<input type="text" onkeypress="gsearch()" id="search" class="form-control" placeholder="Search">
+					</div>
+					<a href="javascript:gsearch()" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-search"></span></a>
+					<!-- <button onclick="javascript:add_row()" type="submit" class="btn btn-default">Submit</button> -->
+				</form>
+			</div>
+			<div class="col-md-3">
+				<a href="javascript:list_tax_payer('All Tax Payer List')" class="btn btn-success">See all list</a>
+			</div>
+			<div class="col-md-3">
+				<a href="javascript:draw_entry_form()" class="btn btn-primary">Add New Entry</a>
+			</div>
+			
+		</div>
+
+		<div class="container" id="address">
+			<div class="form panel panel-default" style="margin-top:20px">
+				<table class="table">		
+					<tr>
+						<th><h3>Serial</h3></th>
+						<th><h3>Name</h3></th>
+						<th><h3>ETIN</h3></th>
+						<th><h3>TIN</h3></th>
+						<th><h3>Remove</h3></th>
+					</tr>
+				</table>
+				<div id="address_list"></div>
+				<hr>
+				<div class="button" style="margin-top:20px;margin-bottom:20px;margin-left:20px">
+					
+						
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="confirmation">
+		</div>
+
+		<div class="container" id="dynamic_container">
+		</div>
+
+		<div class="container" id="restore_container">
+		<hr>
+			<div class="col-md-1">
+				<a href="javascript:backupDb()" class="btn btn-success">Backup</a>
+			</div>
+
+
+			<div class="col-md-1">
+				<div style="width: 0px;height: 0px;overflow: hidden;"><input id="the-file-input" type="file"></div>
+				<a href="javascript:startRestore()" class="btn btn-primary">Restore</a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<hr>
+				<p>
+					<small>a software by <a href="https://isolutionbd.org/">iSolution</a></small>
+				</p>
+			</div> <!-- end container -->
+		</footer>
+	</div>
+	</div>
+
+
+
+
+	 <script type="text/javascript">
+		// 	 var db = openDatabase('mydb', '1.0', 'my first database', 2*1024*1024,console.log('db connection opened'));
+
+	// 	 function add_entry (argument) {
+	// 	 	// body...
+		 
+	// 		db.transaction(function (tx) {
+	// 		 /*
+	// 		  tx.executeSql('CREATE TABLE IF NOT EXISTS foo (id unique, text)');
+	// 		  tx.executeSql('INSERT INTO foo (id, text) VALUES (1, "synergies")');
+
+	// 		tx.executeSql('CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, value VARCHAR)');
+
+
+	// 		tx.executeSql('INSERT INTO foo (id, text) VALUES (10, "dfsgsdgsdBBBBes")');
+
+
+	// 		 tx.executeSql("DELETE FROM todo WHERE ID=?", [id],
+	// 		        html5rocks.webdb.onSuccess,
+	// 		        html5rocks.webdb.onError);
+	// 		    });
+	// 		*/
+	// 		tx.executeSql('INSERT INTO test ( value) VALUES ( "আসদসসাওস্মক্ব")');
+
+	// 		  tx.executeSql('SELECT * FROM test', [], function (tx, results) {
+	// 		  var len = results.rows.length, i;
+	// 		  for (i = 0; i < len; i++) {
+	// 		    alert(results.rows.item(i).value);
+	// 		  }
+	// 		});
+
+	// 		});
+	// 	}
+
+	// 	function add_row (argument) {
+	// 		db.transaction(function (tx) {
+	// 				 // tx.executeSql('CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, value VARCHAR)');
+	// 				tx.executeSql('INSERT INTO test ( value) VALUES ( ?)',[$('#add').val()]);
+
+	// 				tx.executeSql('SELECT * FROM test', [], function (tx, results) {alert('1');
+	// 		  var len = results.rows.length, i;
+	// 		  for (i = 0; i < len; i++) {
+	// 		    alert(results.rows.item(i).value);
+	// 		  }
+	// 		});
+	// 			});
+	// 	}
+
+	// 	function create_tax_table (argument) {
+	// 		// body...
+	// 		db.transaction(function (tx) {
+	// 		  tx.executeSql('CREATE TABLE IF NOT EXISTS tax_payer (id INTEGER PRIMARY KEY, name VARCHAR, nid VARCHAR, etin VARCHAR, tin VARCHAR, circle VARCHAR, tax_area VARCHAR, tax_year VARCHAR, residency VARCHAR, status VARCHAR, company VARCHAR, spouse VARCHAR, f_name VARCHAR, m_name VARCHAR, birthday VARCHAR, c_address VARCHAR, p_addrss VARCHAR, phone VARCHAR, vat_num VARCHAR)');
+	// 		});
+	// 	}
+
+	// 	function add_tax_payer (argument) {
+	// 		// body...
+	// 		db.transaction(function (tx) {
+
+	// 			var value_list=[$('#name').val(),$('#id-card').val(),$('#etin').val(),$('#tin').val(),$('#circle').val(),$('#tax-area').val(),$('#tax-year').val(),$('#residency').val(),$('#status').val(),$('#company').val(),$('#spouse').val(),$('#f_name').val(),$('#m_name').val(),$('#birthday').val(),$('#c_address').val(),$('#p_addrss').val(),$('#phone').val(),$('#vat_num').val()];
+
+	// 				tx.executeSql('INSERT INTO tax_payer ( name, nid, etin, tin, circle, tax_area, tax_year, residency, status, company, spouse, f_name, m_name, birthday, c_address, p_addrss, phone, vat_num) VALUES ( ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',value_list);
+	// 			});
+
+	// 	}
+
+	</script>	
+
+	<script src="js/system.js"></script>
+</body>
+</html>

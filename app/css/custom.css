@@ -1,0 +1,240 @@
+a:hover{
+	text-decoration: none;
+}
+#dynamic_container{
+	width: 1080px;
+}
+.input-distance{
+	margin-top: 5px;
+}
+/*.form{
+	height: 340px;
+	overflow-y: scroll;
+}*/
+#confirmation{
+	margin-left: 20px;
+	margin-top: 20px;
+	color: rgb(19, 140, 43);
+	font-size: 27px;
+}
+
+.jumbotron{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.address{
+	margin-top: 20px;
+}
+#address{
+	display: none;
+}
+
+
+		.page-1,.page-2,.page-3,.page-4,.page-5,.page-6,.page-7,.page-8{
+			width: 210mm;
+			height: 297mm;
+			position: relative;
+		}
+		.print{
+			width: 210mm;
+		}
+		.p1_part2{
+			margin-left: 1px;
+		}
+		.p3_part2,.p8_part2{
+			margin-left: -1px;
+		}
+		#P1name, #P1nid, #P1etin, #P1tin, #first3, #second3, #last4, #P1circle, #P1tax_area, #P1tax_year, #nibashi, #onibashi, #bekti, #firm, #bekti_shongho, #hindu_poribar, #P1company, #P1spouse, #P1f_name, #P1m_name, #P1birthday, #c_address, #p_address, #P1phone, #P1vat_num, #iyedate, #p2name, #guardian, #p2guardiantick, #p2tin, #p2tintick, #p3name, #p3tin, #p5name, #p5tin, #p7name, #p7tin, #p7bname, #p7btax-year, #p7btin, #p7btintick, #p7bcircle, #p7bcircledot, #p7btax-area{
+			position: absolute;
+		}
+		#P1name{
+		  	top: 390px;
+			left: 240px;
+		}
+		#P1nid{
+			top: 420px;
+  			left: 285px;
+		}
+		#P1etin{
+			top: 469px;
+		  	left: 250px;
+		  	letter-spacing: 22px;
+
+		}
+		#P1tin{
+		  	top: 522px;
+		  	left: 265px;
+		  	letter-spacing: 22px;
+		}
+		#first3{
+			left:-13px;
+		}
+		#second3{
+			left:105px;
+		}
+		#last4{
+			left:227px;
+		}
+		#P1circle{
+		  	top: 547px;
+  			left: 190px;
+		}
+		#P1tax_area{
+		  	top: 547px;
+		  	left: 463px;
+		}
+		#P1tax_year{
+	  	  	top: 577px;
+  			left: 170px;
+		}
+		#nibashi{
+			top: 584px;
+  			left: 530px;
+		}
+		#onibashi{
+			top: 584px;
+  			left: 599px;
+		}
+		#bekti{
+			top: 614px;
+  			left: 221px;
+		}
+		#firm{
+			top: 614px;
+  			left: 293px;
+		}
+		#bekti_shongho{
+			top: 614px;
+  			left: 402px;
+		}
+		#hindu_poribar{
+			top: 614px;
+  			left: 560px;
+		}
+		#P1company{
+			top: 640px;
+			left: 385px;
+		}
+		#P1spouse{
+			top: 670px;
+			left: 385px;
+		}
+		#P1f_name{
+			top: 700px;
+			left: 240px;
+		}
+		#P1m_name{
+			top: 730px;
+			left: 240px;
+		}
+		#P1birthday{
+			top: 772px;
+			left: 285px;
+		  	letter-spacing: 44px;
+		}
+		#c_address{
+			width: 500px;
+			top: 810px;
+			left: 240px;
+			line-height: 30px;
+		}
+		#p_address{
+			width: 500px;
+			top: 900px;
+			left: 240px;
+			line-height: 30px;
+		}
+		#c_sfield,#c_holding,#c_road,#c_village,#c_post,#c_upazila,#c_district,#p_sfield,#p_holding,#p_road,#p_village,#p_post,#p_upazila,#p_district{
+			padding-right: 10px;
+		}
+		#P1phone{
+			top: 980px;
+			left: 237px;
+		}
+		#P1vat_num{
+			top: 1023px;
+			left: 265px;
+		}
+		#iyedate{
+			top: 80px;
+    		left: 258px;
+		}
+		#p2name{
+			top: 749px;
+    		left: 167px;
+		}
+		#guardian{
+			top: 749px;
+    		left: 473px;
+		}
+		#p2guardiantick{
+			top: 740px;
+		}
+		#p2tin{
+			top: 773px;
+			left: 218px;
+		}
+		#p2tintick{
+			top: 765px;
+		}
+		#p3name{
+			top: 108px;
+			left: 165px;
+		}
+		#p3tin{
+			top: 110px;
+		}
+		#p5name{
+			top: 128px;
+			left: 165px;
+		}
+		#p5tin{
+			top: 131px;
+		}
+		#p7name{
+			top: 211px;
+			left: 165px;
+		}
+		#p7tin{
+			top: 213px;
+		}
+		#p7bname{
+			top: 926px;
+			left: 167px;
+		}
+		#p7btax-year{
+			top: 926px;
+			left: 587px;
+		}
+		#p7btin{
+			top: 973px;
+		}
+		#p7btintick{
+			left: 115px;
+		}
+		#p7bcircle{
+			top: 960px;
+			left: 499px;
+		}
+		#p7bcircledot{
+			top: 964px;
+			left: 499px;
+		}
+		#p7btax-area{
+			top: 960px;
+			left: 634px;
+		}
+
+		.modal-backdrop{
+			position: relative;
+		}
+
+		.p2tintick{
+			left:120px;
+		}
+		.p2tintickelse{
+			left:180px;
+		}
+

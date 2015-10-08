@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Income Tax Form</title>
+	<meta name="description" content="A desktop Application With Node.js">
+	<meta name="author" content="iSolution">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+	<style type="text/css">
+		.page-1,.page-2,.page-3,.page-4,.page-5,.page-6,.page-7,.page-8{
+			width: 210mm;
+			height: 297mm;
+			position: relative;
+		}
+		.print{
+			width: 210mm;
+		}
+		.p1_part2{
+			margin-left: 1px;
+		}
+		.p3_part2,.p8_part2{
+			margin-left: -1px;
+		}
+		#name, #nid, #etin, #tin, #first3, #second3, #last4, #circle, #tax_area, #tax_year, #nibashi, #onibashi, #bekti, #firm, #bekti_shongho, #hindu_poribar, #company, #spouse, #f_name, #m_name, #birthday, #c_address, #p_address, #phone, #vat_num, #iyedate, #p2name, #guardian, #p2guardiantick, #p2tin, #p2tintick, #p3name, #p3tin, #p5name, #p5tin, #p7name, #p7tin, #p7bname, #p7btax-year, #p7btin, #p7btintick, #p7bcircle, #p7bcircledot, #p7btax-area{
+			position: absolute;
+		}
+		#name{
+		  	top: 390px;
+			left: 240px;
+		}
+		#nid{
+			top: 420px;
+  			left: 285px;
+		}
+		#etin{
+			top: 469px;
+		  	left: 250px;
+		  	letter-spacing: 22px;
+
+		}
+		#tin{
+		  	top: 522px;
+		  	left: 265px;
+		  	letter-spacing: 22px;
+		}
+		#first3{
+			left:-13px;
+		}
+		#second3{
+			left:105px;
+		}
+		#last4{
+			left:227px;
+		}
+		#circle{
+		  	top: 547px;
+  			left: 190px;
+		}
+		#tax_area{
+		  	top: 547px;
+		  	left: 463px;
+		}
+		#tax_year{
+	  	  	top: 577px;
+  			left: 170px;
+		}
+		#nibashi{
+			top: 584px;
+  			left: 530px;
+		}
+		#onibashi{
+			top: 584px;
+  			left: 599px;
+		}
+		#bekti{
+			top: 614px;
+  			left: 221px;
+		}
+		#firm{
+			top: 614px;
+  			left: 293px;
+		}
+		#bekti_shongho{
+			top: 614px;
+  			left: 402px;
+		}
+		#hindu_poribar{
+			top: 614px;
+  			left: 560px;
+		}
+		#company{
+			top: 640px;
+			left: 385px;
+		}
+		#spouse{
+			top: 670px;
+			left: 385px;
+		}
+		#f_name{
+			top: 700px;
+			left: 240px;
+		}
+		#m_name{
+			top: 730px;
+			left: 240px;
+		}
+		#birthday{
+			top: 772px;
+			left: 285px;
+		  	letter-spacing: 44px;
+		}
+		#c_address{
+			width: 500px;
+			top: 810px;
+			left: 240px;
+			line-height: 30px;
+		}
+		#p_address{
+			width: 500px;
+			top: 900px;
+			left: 240px;
+			line-height: 30px;
+		}
+		#phone{
+			top: 980px;
+			left: 237px;
+		}
+		#vat_num{
+			top: 1023px;
+			left: 265px;
+		}
+		#iyedate{
+			top: 80px;
+    		left: 258px;
+		}
+		#p2name{
+			top: 749px;
+    		left: 167px;
+		}
+		#guardian{
+			top: 749px;
+    		left: 473px;
+		}
+		#p2guardiantick{
+			top: 740px;
+		}
+		#p2tin{
+			top: 773px;
+			left: 218px;
+		}
+		#p2tintick{
+			top: 765px;
+		}
+		#p3name{
+			top: 108px;
+			left: 165px;
+		}
+		#p3tin{
+			top: 110px;
+		}
+		#p5name{
+			top: 128px;
+			left: 165px;
+		}
+		#p5tin{
+			top: 131px;
+		}
+		#p7name{
+			top: 211px;
+			left: 165px;
+		}
+		#p7tin{
+			top: 213px;
+		}
+		#p7bname{
+			top: 926px;
+			left: 167px;
+		}
+		#p7btax-year{
+			top: 926px;
+			left: 587px;
+		}
+		#p7btin{
+			top: 973px;
+		}
+		#p7btintick{
+			left: 115px;
+		}
+		#p7bcircle{
+			top: 960px;
+			left: 499px;
+		}
+		#p7bcircledot{
+			top: 964px;
+			left: 499px;
+		}
+		#p7btax-area{
+			top: 960px;
+			left: 634px;
+		}
+		span{
+			padding-right: 10px;
+		}
+	</style>
+
+<body>
+	<div class="page-1">
+		<div class="">
+			<div class="">
+				<img src="images/p1_1.png" alt="">
+				<img class="p1_part2" src="images/p1_2.png" alt="">
+				<div id="name"></div>
+				<div id="nid"></div>
+				<div id="etin"></div>
+				<div id="tin">
+					<span id="first3"></span>
+					<span id="second3"></span>
+					<span id="last4"></span>
+				</div>
+				<div id="circle"></div>
+				<div id="tax_area"></div>
+				<div id="tax_year"></div>
+				<div id="nibashi"></div>
+				<div id="onibashi"></div>
+				<div id="bekti"></div>
+				<div id="firm"></div>
+				<div id="bekti_shongho"></div>
+				<div id="hindu_poribar"></div>
+				<div id="company"></div>
+				<div id="spouse"></div>
+				<div id="f_name"></div>
+				<div id="m_name"></div>
+				<div id="birthday"></div>
+				<div id="c_address">
+					<span id="c_sfield"></span>
+					<span id="c_holding"></span>
+					<span id="c_road"></span>
+					<span id="c_village"></span>
+					<span id="c_post"></span>
+					<span id="c_upazila"></span>
+					<span id="c_district"></span>
+				</div>
+				<div id="p_address">
+					<span id="p_sfield"></span>
+					<span id="p_holding"></span>
+					<span id="p_road"></span>
+					<span id="p_village"></span>
+					<span id="p_post"></span>
+					<span id="p_upazila"></span>
+					<span id="p_district"></span>
+				</div>
+				<div id="phone"></div>
+				<div id="vat_num"></div>
+				<input type="hidden" id="id">
+			</div>
+		</div>
+	</div>
+	<div class="page-2">
+		<div class="">
+			<div class="">
+				<img src="images/p2_1.png" alt="">
+				<img class="" src="images/p2_2.png" alt="">
+				<div id="iyedate"></div>
+				<div id="p2name"></div>
+				<div id="guardian"></div>
+				<div id="p2guardiantick"></div>
+				<div id="p2tin"></div>
+				<div id="p2tintick"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-3">
+		<div class="">
+			<div class="">
+				<img src="images/p3_1.png" alt="">
+				<img class="p3_part2" src="images/p3_2.png" alt="">
+				<div id="p3name"></div>
+				<div id="p3tin"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-4">
+		<div class="">
+			<div class="">
+				<img src="images/p4_1.png" alt="">
+				<img class="" src="images/p4_2.png" alt="">
+				<div class=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-5">
+		<div class="">
+			<div class="">
+				<img src="images/p5_1.png" alt="">
+				<img class="" src="images/p5_2.png" alt="">
+				<div id="p5name"></div>
+				<div id="p5tin"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-6">
+		<div class="">
+			<div class="">
+				<img src="images/p6_1.png" alt="">
+				<img class="" src="images/p6_2.png" alt="">
+				<img class="" src="images/p6_3.png" alt="">
+				<div class=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-7">
+		<div class="">
+			<div class="">
+				<img src="images/p7_1.png" alt="">
+				<div id="p7name"></div>
+				<div id="p7tin"></div>
+				<img class="" src="images/p7_2.png" alt="">
+				<div id="p7bname"></div>
+				<div id="p7btax-year"></div>
+				<div id="p7btin"></div>
+				<div id="p7btintick"></div>
+				<div id="p7bcircle"></div>
+				<div id="p7bcircledot">....</div>
+				<div id="p7btax-area"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page-8">
+		<div class="">
+			<div class="">
+				<img src="images/p8_1.png" alt="">
+				<img class="p8_part2" src="images/p8_2.png" alt="">
+				<div class=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="print">
+		<div class="col-md-1">
+			<a href="javascript:window.print()" class="btn btn-success">Print</a>
+		</div>
+	</div>
+</body>
+</html>

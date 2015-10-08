@@ -1,0 +1,365 @@
+<div class="container form">
+	<form onsubmit="return formValidation()" action="javascript:add_tax_payer()" role="form">
+		<div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="name">1.Name:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control input-md required" type="text" id="name" name="name" placeholder="Name" ><span></span>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="id-card">2.ID card:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control input-md" type="text" id="id-card" name="id-card" placeholder="Id card">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="etin">3.ETIN:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control input-md onerequired" type="text" id="etin" name="etin" placeholder="ETIN"><span></span>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="tin">4.TIN:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control onerequired" type="text" id="tin" name="tin" placeholder="TIN">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="circle">5.i) Circle:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control input-md required" type="text" id="circle" name="circle" placeholder="Circle"><span></span>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="tax-area">5.ii) Tax Area:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control required" type="text" id="tax-area" name="tax-area" placeholder="Tax Area"><span></span>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="tax-year">6.Tax Year:</label>
+		      <div class="col-xs-5">
+				   <select id="tax-year">
+				   		<option value="2000-2001">2000-2001</option>
+				   		<option value="2001-2002">2001-2002</option>
+				   		<option value="2002-2003">2002-2003</option>
+				   		<option value="2003-2004">2003-2004</option>
+				   		<option value="2004-2005">2004-2005</option>
+				   		<option value="2005-2006">2005-2006</option>
+				   		<option value="2006-2007">2006-2007</option>
+				   		<option value="2007-2008">2007-2008</option>
+				   		<option value="2008-2009">2008-2009</option>
+				   		<option value="2009-2010">2009-2010</option>
+				   		<option value="2010-2011">2010-2011</option>
+				   		<option value="2011-2012">2011-2012</option>
+				   		<option value="2012-2013">2012-2013</option>
+				   		<option value="2013-2014">2013-2014</option>
+				   		<option value="2014-2015">2014-2015</option>
+				   		<option value="2015-2016">2015-2016</option>
+				   		<option value="2016-2017">2016-2017</option>
+				   		<option value="2017-2018">2017-2018</option>
+				   		<option value="2018-2019">2018-2019</option>
+				   		<option value="2019-2020">2019-2020</option>
+				   		<option value="2020-2021">2020-2021</option>
+				   		<option value="2020-2021">2020-2021</option>
+				   		<option value="2021-2022">2021-2022</option>
+				   		<option value="2022-2023">2022-2023</option>
+				   		<option value="2023-2024">2023-2024</option>
+				   		<option value="2024-2025">2024-2025</option>
+				   		<option value="2025-2026">2025-2026</option>
+				   		<option value="2026-2027">2026-2027</option>
+				   		<option value="2027-2028">2027-2028</option>
+				   		<option value="2028-2029">2028-2029</option>
+				   		<option value="2029-2030">2029-2030</option>
+				   		<option value="2030-2031">2030-2031</option>
+				   		<option value="2031-2032">2031-2032</option>
+				   		<option value="2032-2033">2032-2033</option>
+				   		<option value="2033-2034">2033-2034</option>
+				   		<option value="2034-2035">2034-2035</option>
+				   		<option value="2035-2036">2035-2036</option>
+				   		<option value="2036-2037">2036-2037</option>
+				   		<option value="2037-2038">2037-2038</option>
+				   		<option value="2038-2039">2038-2039</option>
+				   		<option value="2039-2040">2039-2040</option>
+				   		<option value="2040-2041">2040-2041</option>
+				   		<option value="2041-2042">2041-2042</option>
+				   		<option value="2042-2043">2042-2043</option>
+				   		<option value="2043-2044">2043-2044</option>
+				   		<option value="2044-2045">2044-2045</option>
+				   		<option value="2045-2046">2045-2046</option>
+				   		<option value="2046-2047">2046-2047</option>
+				   		<option value="2047-2048">2047-2048</option>
+				   		<option value="2048-2049">2048-2049</option>
+				   		<option value="2049-2050">2049-2050</option>
+				   		<option value="2050-2051">2050-2051</option>
+				   		<option value="2051-2052">2051-2052</option>
+				   		<option value="2052-2053">2052-2053</option>
+				   		<option value="2053-2054">2053-2054</option>
+				   		<option value="2054-2055">2054-2055</option>
+				   		<option value="2055-2056">2055-2056</option>
+				   		<option value="2056-2057">2056-2057</option>
+				   		<option value="2057-2058">2057-2058</option>
+				   		<option value="2058-2059">2058-2059</option>
+				   		<option value="2059-2060">2059-2060</option>
+				   		<option value="2060-2061">2060-2061</option>
+				   		<option value="2061-2062">2061-2062</option>
+				   		<option value="2062-2063">2062-2063</option>
+				   		<option value="2063-2064">2063-2064</option>
+				   		<option value="2064-2065">2064-2065</option>
+				   		<option value="2065-2066">2065-2066</option>
+				   		<option value="2066-2067">2066-2067</option>
+				   		<option value="2067-2068">2067-2068</option>
+				   		<option value="2068-2069">2068-2069</option>
+				   		<option value="2069-2070">2069-2070</option>
+				   		<option value="2070-2071">2070-2071</option>
+				   		<option value="2070-2071">2070-2071</option>
+				   		<option value="2071-2072">2071-2072</option>
+				   		<option value="2072-2073">2072-2073</option>
+				   		<option value="2073-2074">2073-2074</option>
+				   		<option value="2074-2075">2074-2075</option>
+				   		<option value="2075-2076">2075-2076</option>
+				   		<option value="2076-2077">2076-2077</option>
+				   		<option value="2077-2078">2077-2078</option>
+				   		<option value="2078-2079">2078-2079</option>
+				   		<option value="2079-2080">2079-2080</option>
+				   		<option value="2080-2081">2080-2081</option>
+				   		<option value="2081-2082">2081-2082</option>
+				   		<option value="2082-2083">2082-2083</option>
+				   		<option value="2083-2084">2083-2084</option>
+				   		<option value="2084-2085">2084-2085</option>
+				   		<option value="2085-2086">2085-2086</option>
+				   		<option value="2086-2087">2086-2087</option>
+				   		<option value="2087-2088">2087-2088</option>
+				   		<option value="2088-2089">2088-2089</option>
+				   		<option value="2089-2090">2089-2090</option>
+				   		<option value="2090-2091">2090-2091</option>
+				   		<option value="2091-2092">2091-2092</option>
+				   		<option value="2092-2093">2092-2093</option>
+				   		<option value="2093-2094">2093-2094</option>
+				   		<option value="2094-2095">2094-2095</option>
+				   		<option value="2095-2096">2095-2096</option>
+				   		<option value="2096-2097">2096-2097</option>
+				   		<option value="2097-2098">2097-2098</option>
+				   		<option value="2098-2099">2098-2099</option>
+				   		<option value="2099-2100">2099-2100</option>
+				   		<option value="2100-2101">2100-2101</option>
+				   		<option value="2101-2102">2101-2102</option>
+				   		<option value="2102-2103">2102-2103</option>
+				   		<option value="2103-2104">2103-2104</option>
+				   		<option value="2104-2105">2104-2105</option>
+				   		<option value="2105-2106">2105-2106</option>
+				   		<option value="2106-2107">2106-2107</option>
+				   		<option value="2107-2108">2107-2108</option>
+				   		<option value="2108-2109">2108-2109</option>
+				   		<option value="2109-2110">2109-2110</option>
+				   		<option value="2110-2111">2110-2111</option>
+				   		<option value="2111-2112">2111-2112</option>
+				   		<option value="2112-2113">2112-2113</option>
+				   		<option value="2113-2114">2113-2114</option>
+				   		<option value="2114-2115">2114-2115</option>
+				   </select>
+			   </div>
+	    </div>
+		<div class="row clearfix input-distance">
+		   <label class="col-xs-offset-2 col-xs-3 control-label">** Sex:</label>
+		   <div class="col-xs-5">
+			   <select id="sex">
+			   		<option value="male">male</option>
+			   		<option value="female">female</option>
+			   </select>
+			</div>
+		</div>
+		<div class="row clearfix input-distance">
+		   <label class="col-xs-offset-2 col-xs-3 control-label">৭। আবাসিক মর্যাদা</label>
+		   <div class="col-xs-5">
+			   <select id="residency">
+			   		<option value="নিবাসী">নিবাসী</option>
+			   		<option value="অনিবাসী">অনিবাসী</option>
+			   </select>
+			</div>
+		</div>
+		<div class="row clearfix input-distance">
+		   <label class="col-xs-offset-2 col-xs-3 control-label">৮। মর্যাদা</label>
+		   <div class="col-xs-5">
+			  <select id="status">
+			   		<option value="ব্যক্তি">ব্যক্তি</option>
+			   		<option value="ফার্ম">ফার্ম</option>
+			   		<option value="ব্যক্তি সংঘ">ব্যক্তি সংঘ</option>
+			   		<option value="হিন্দু অবিভক্ত পরিবার">হিন্দু অবিভক্ত পরিবার</option>
+			   </select>
+			</div>
+		</div>
+		<div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="company">9.Company:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="company" name="company" placeholder="Company">
+		      </div>
+	    </div>
+		<div class="row clearfix input-distance">
+		   <label class="col-xs-offset-2 col-xs-3 control-label">* Company's Physical Address</label>
+		   <div class="col-xs-5">
+			   <select id="company_address">
+			   		<option value="available">Available</option>
+			   		<option value="unavailable">Unavailable</option>
+			   </select>
+			</div>
+		</div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="spouse">10.Wife/Husband Name:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="spouse" name="spouse" placeholder="Wife/Husband Name">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="f_name">11.Father Name:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="f_name" name="f_name" placeholder="Father Name"><span></span>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="m_name">12.Mother Name:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="m_name" name="m_name" placeholder="Mother Name">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="birthday">13.Date of Birth:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="birthday" name="birthday" placeholder="Date of Birth">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="c_address">14.i) Current Address:</label>
+	    </div> 
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_sfield">* Special Field:</label>
+		      <div class="col-xs-5">
+		        <textarea class="form-control adrsrequired" type="text" id="c_sfield" name="c_sfield" placeholder="Current Special Field"></textarea><span></span>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_holding">* Holding No:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control adrsrequired" type="text" id="c_holding" name="c_holding" placeholder="Current Holding">
+		      </div>
+	    </div>
+	   
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_road">* Road No / Name:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control adrsrequired" type="text" id="c_road" name="c_road" placeholder="Current Road">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_village">* Colony / Village:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control adrsrequired" type="text" id="c_village" name="c_village" placeholder="Current Village or Colony">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_post">* Post:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control adrsrequired" type="text" id="c_post" name="c_post" placeholder="Current Post">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_upazila">* Upazila:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control adrsrequired" type="text" id="c_upazila" name="c_upazila" placeholder="Current Upazila">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="c_district">* District:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control adrsrequired" type="text" id="c_district" name="c_district" placeholder="Current District">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		   <label class="col-xs-offset-2 col-xs-3 control-label">* Current and Permanent Address</label>
+		   <div class="col-xs-5">
+			   <select id="cp_address">
+			   		<option value="different">different</option>
+			   		<option value="same">same</option>
+			   </select>
+			</div>
+		</div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="p_address">14.ii) Permanent Address:</label>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_sfield">* Special Field:</label>
+		      <div class="col-xs-5">
+		        <textarea class="form-control" type="text" id="p_sfield" name="p_sfield" placeholder="Permanent Special Field"></textarea>
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_holding">* Holding No:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="p_holding" name="p_holding" placeholder="Permanent Holding">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_road">* Road No / Name:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="p_road" name="p_road" placeholder="Permanent Road">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_village">* Colony / Village:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="p_village" name="p_village" placeholder="Permanent Village or Colony">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_post">* Post:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="p_post" name="p_post" placeholder="Permanent Post">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_upazila">* Upazila:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="p_upazila" name="p_upazila" placeholder="Permanent Upazila">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-3 col-xs-2 control-label" for="p_district">* District:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="p_district" name="p_district" placeholder="Permanent District">
+		      </div>
+	    </div>
+		<div class="row clearfix input-distance">
+		   <label class="col-xs-offset-2 col-xs-3 control-label">* Mailing Address</label>
+		   <div class="col-xs-5">
+			   <select id="m_address">
+			   		<option value="current">Current</option>
+			   		<option value="permanent">Permanent</option>
+			   </select>
+			</div>
+		</div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="phone">15.Telephone:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="phone" name="phone" placeholder="Telephone">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="vat_num">16.Vat Number:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="vat_num" name="vat_num" placeholder="Vat Number">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+		      <label class="col-xs-offset-2 col-xs-3 control-label" for="date">**Date:</label>
+		      <div class="col-xs-5">
+		        <input class="form-control" type="text" id="date" name="date" placeholder="Date">
+		      </div>
+	    </div>
+	    <div class="row clearfix input-distance">
+	    	<div class="col-xs-offset-2 col-xs-8">
+	    		<input type="submit" class="btn btn-block btn-lg btn-primary" />
+	    	</div>
+	    </div>
+	</form>
+	<div class="input-distance"></div>
+</div>

@@ -1,0 +1,70 @@
+{
+  "name": "nw-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "window": {
+    "toolbar": true,
+    "width": 1080,
+    "height": 750
+  },
+ 
+  "license": "ISC",
+  "dependencies": {
+    "pretty-bytes": "^1.0.2"
+  },
+  "nodejs":true,
+  "platformOverrides": {
+        "win": {
+            "window": {
+                "toolbar": true
+            }
+        },
+        "win32": {
+            "window": {
+                "frame": true,
+                "toolbar": false
+            }
+        },
+        "win64": {
+            "window": {
+                "frame": true
+            }
+        },
+        "osx": {
+            "window": {
+                "toolbar": true
+            }
+        },
+        "osx32": {
+            "window": {
+                "toolbar": true
+            }
+        },
+        "osx64": {
+            "window": {
+                "toolbar": true
+            }
+        },
+        "linux": {
+            "window": {
+                "toolbar": true
+            }
+        },
+        "linux32": {
+            "window": {
+                "toolbar": true
+            }
+        },
+        "linux64": {
+            "window": {
+                "toolbar": true
+            }
+        }
+
+      }
+}
