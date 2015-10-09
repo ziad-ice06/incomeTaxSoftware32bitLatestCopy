@@ -1418,7 +1418,7 @@ var footer='</table></div>';
 						if(results.rows.item(0).etin!="")
 						{
 							// $("#p2tintick").css("left","120px");
-							$("#p2tintick").addClass("p2tintick");
+							$("#p2tintick:eq("+i+")").addClass("p2tintick");
 
 						}
 						else
@@ -1426,7 +1426,7 @@ var footer='</table></div>';
 							// alert(results.rows.item(0).tin.substring(0, 3)+'-'+results.rows.item(0).tin.substring(3, 6)+'-'+results.rows.item(0).tin.substring(6, 10));
 							
 							// $('#p2tintick').css("left","180px");
-							$('#p2tintick').addClass("p2tintickelse");
+							$("#p2tintick:eq("+i+")").addClass("p2tintickelse");
 						}
 					
 
